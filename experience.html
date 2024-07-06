@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush's Experience</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+</head>
+<body class="bg-black text-white dark:bg-black dark:text-white">
+
+    <!-- Navbar -->
+    <header class="bg-gray-900 py-4 px-4 shadow-sm dark:bg-gray-800">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="far fa-circle text-purple-600"></i>
+                <span class="font-semibold">Ayush</span>
+            </div>
+            <!-- Navigation for small screens (hidden on large screens) -->
+            <nav class="space-x-8 hidden md:flex">
+                <a href="index.html" class="text-purple-600">Home</a>
+                <a href="about.html">About</a>
+                <a href="skills.html">Skills</a>
+                <a href="experience.html">Experience</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="certificates.html">Certificates</a>
+                <a href="mailto:ayushgorlawar91@gmail.com">Contact</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="menu-toggle" class="focus:outline-none">
+                    <i class="fas fa-bars text-white"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <nav id="mobile-menu" class="hidden md:hidden">
+            <a href="index.html" class="block py-2 px-4 text-sm text-white">Home</a>
+            <a href="about.html" class="block py-2 px-4 text-sm text-white">About</a>
+            <a href="skills.html" class="block py-2 px-4 text-sm text-white">Skills</a>
+            <a href="experience.html" class="block py-2 px-4 text-sm text-white">Experience</a>
+            <a href="portfolio.html" class="block py-2 px-4 text-sm text-white">Portfolio</a>
+            <a href="certificates.html" class="block py-2 px-4 text-sm text-white">Certificates</a>
+            <a href="mailto:ayushgorlawar91@gmail.com" class="block py-2 px-4 text-sm text-white">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Experience Section -->
+    <section class="container mx-auto py-20">
+        <h1 class="text-4xl font-bold text-center mb-10">Experience</h1>
+        
+        <!-- Prodigy Infotech Internship -->
+        <div class="bg-gray-800 shadow-md rounded-lg overflow-hidden mb-8">
+            <div class="p-4">
+                <h2 class="font-semibold text-lg">Intern at Prodigy Infotech</h2>
+                <p class="text-gray-400">Duration: June 2023 - August 2023</p>
+                <p class="mt-4">During my internship at Prodigy Infotech, I gained valuable experience in the tech industry, particularly in the field of software development. My responsibilities included:</p>
+                <ul class="list-disc list-inside mt-2">
+                    <li>Developed and implemented machine learning models to improve data analysis processes.</li>
+                    <li>Collaborated with senior developers to design and build scalable software solutions.</li>
+                    <li>Participated in daily stand-ups and contributed to project planning and execution.</li>
+                    <li>Conducted research on the latest industry trends and technologies to inform project development.</li>
+                </ul>
+                <p class="mt-4">This internship enhanced my technical skills and provided me with hands-on experience in a professional setting, preparing me for future roles in the tech industry.</p>
+            </div>
+        </div>
+        
+        <!-- Encryptix Internship -->
+        <div class="bg-gray-800 shadow-md rounded-lg overflow-hidden">
+            <div class="p-4">
+                <h2 class="font-semibold text-lg">Machine Learning Intern at Encryptix</h2>
+                <p class="text-gray-400">Duration: July 2023 - August 2023</p>
+                <p class="mt-4">At Encryptix, I worked as a Machine Learning Intern where I:</p>
+                <ul class="list-disc list-inside mt-2">
+                    <li>Develop an AI model to classify credit card transactions as fraudulent or legitimate using machine learning algorithms.</li>
+                    <li>Create an AI model that can accurately classify SMS messages into spam or legitimate categories.</li>
+                    <li>Implement a character-level RNN using frameworks like TensorFlow or PyTorch.</li>
+                    <li>Presented findings and progress updates to the team.</li>
+                </ul>
+                <p class="mt-4">This experience allowed me to delve deeper into the intersection of machine learning and Each task involves specific steps from data preparation and model selection to training and evaluation</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            var mobileMenu = document.getElementById('mobile-menu');
+            if (mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.remove('hidden');
+            } else {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>

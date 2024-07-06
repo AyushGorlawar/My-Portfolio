@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+
+    <!-- Navbar -->
+    <header class="bg-gray-900 py-4 px-4 shadow-sm">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="far fa-circle text-purple-600"></i>
+                <span class="font-semibold">Ayush</span>
+            </div>
+            <button class="block lg:hidden text-white focus:outline-none" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <!-- Navigation for large screens -->
+            <nav class="hidden lg:flex space-x-4 lg:space-x-8">
+                <a href="#home" class="text-purple-600">Home</a>
+                <a href="#about">About</a>
+                <a href="index.html">Portfolio</a>
+                <a href="experience.html">Experience</a>
+                <a href="certificates.html">Certificates</a>
+                <a href="mailto:ayushgorlawar91@gmail.com">Contact</a>
+            </nav>
+        </div>
+        <!-- Navigation for small screens -->
+        <nav class="lg:hidden bg-gray-900 hidden" id="mobile-menu">
+            <a href="#home" class="block py-2 px-4 text-purple-600">Home</a>
+            <a href="#about" class="block py-2 px-4">About</a>
+            <a href="experience.html" class="block py-2 px-4 text-sm text-white">Experience</a>
+            <a href="#portfolio" class="block py-2 px-4">Portfolio</a>
+            <a href="certificates.html" class="block py-2 px-4">Certificates</a>
+            <a href="mailto:ayushgorlawar91@gmail.com" class="block py-2 px-4 text-sm text-white">Contact</a>
+        </nav>
+    </header>
+    
+    <!-- Hero Section -->
+    <section id="home" class="container mx-auto flex flex-col md:flex-row items-center py-20 md:py-40 px-4">
+        <div class="md:w-1/2 text-center md:text-left space-y-4">
+            <h1 class="text-5xl font-bold">Hi, I'm Ayush</h1>
+            <p class="text-2xl">Machine Learning Engineer</p>
+            <p>24 | Artificial Intelligence | Software Development | Open Research | Freelance</p>
+            <div class="mt-6">
+                <button class="bg-purple-600 text-white py-2 px-6 rounded-full" id="#contact">Contact <i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+        <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center md:justify-end">
+            <div class="relative">
+                <img class="rounded-full w-48 h-48 md:w-60 md:h-60" src="https://avatars.githubusercontent.com/u/140530624?v=4" alt="Ayush's Profile Picture">
+                <div class="absolute bottom-0 right-0 transform translate-x-1/2 translate-y-1/2 bg-purple-600 w-32 h-32 md:w-40 md:h-40 rounded-full z-[-1]"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-gray-900 py-20 px-4">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold">About</h1>
+            <p class="text-gray-400 mt-2"><b>My Introduction</b></p>
+            <div class="flex flex-col md:flex-row mt-10 items-center">
+                <div class="md:w-1/2 flex justify-center md:justify-start mb-6 md:mb-0">
+                    <img class="rounded-xl w-60 h-60 md:w-90 md:h-90" src="https://avatars.githubusercontent.com/u/140530624?v=4" alt="Ayush's Profile Picture">
+                </div>
+                <div class="md:w-1/2 text-left md:ml-10 space-y-4">
+                    <p>I'm a passionate and proactive Computer Science student with a strong focus on Machine Learning. Over the past years, I've developed a solid foundation in Machine Learning, Python, JavaScript, Core Java, Web Development, and Design through various projects and internships. I have worked on several machine learning projects that showcase my skills and expertise in this field, including Hand Gestures Recognition, House Price Prediction, Customer Segmentation using K-Means Clustering, and Food Calorie Estimator. Currently, I'm focusing on creating impactful projects that leverage machine learning to solve real-world problems. I aim to contribute my skills and creativity to the tech industry, making a positive difference in society. Self-motivation, attention to detail, innovative problem-solving, strong analytical skills, articulate communication, and creativity drive me to achieve great results. I believe in lifelong learning and continuously seek opportunities to expand my knowledge through workshops and online courses. If you're looking to collaborate, hire, or require any assistance, feel free to reach out!</p>
+                    <div class="flex space-x-8">
+                        <div>
+                            <p class="text-3xl font-bold">06+</p>
+                            <p class="text-gray-400">I've developed and implemented over three machine learning projects, including Hand Gestures Recognition, House Price Prediction, and Customer Segmentation using K-Means Clustering.</p>
+                        </div>
+                        <div>
+                            <p class="text-3xl font-bold">23+</p>
+                            <p class="text-gray-400">I have successfully completed more than 23 projects, encompassing a wide range of topics from web development to software development to machine learning projects.</p>
+                        </div>
+                        <div>
+                            <p class="text-3xl font-bold">03+</p>
+                            <p class="text-gray-400">I have contributed to projects at over three companies, gaining practical insights and collaborating with diverse teams in the tech industry.</p><br>
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <a href="mailto:ayushgorlawar91@gmail.com">
+                            <button class="bg-purple-600 text-white py-2 px-6 rounded-full">
+                                Leave a message <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container mx-auto py-10 px-4">       
+        <h2 class="text-4xl font-bold text-center mb-6">Skills</h2>
+        <p class="text-gray-400 text-center mb-8">Technical & Miscellaneous Skills</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Skill Item -->
+            <div class="bg-gray-800 shadow-md rounded-lg overflow-hidden">
+                <div class="p-4">
+                    <p class="font-semibold text-lg">AI & Data Science</p>
+                    <p class="text-gray-400">1+ Years Experience</p>
+                </div>
+                <div class="bg-gray-700">
+                    <div class="bg-purple-600 h-2.5 rounded-full" style="width: 72%;"></div>
+                </div>
+                <div class="p-4 flex justify-between items-center">
+                    <p class="text-xs text-gray-400">72%</p>
+                </div>
+            </div>
+
+            <!-- Skill Item -->
+            <div class="bg-gray-800 shadow-md rounded-lg overflow-hidden">
+                <div class="p-4">
+                    <p class="font-semibold text-lg">Computer Vision</p>
+                    <p class="text-gray-400">Basic Understanding</p>
+                </div>
+                <div class="bg-gray-700">
+                    <div class="bg-purple-600 h-2.5 rounded-full" style="width: 55%;"></div>
+                </div>
+                <div class="p-4 flex justify-between items-center">
+                    <p class="text-xs text-gray-400">55%</p>
+                </div>
+            </div>
+
+            <!-- Skill Item -->
+            <div class="bg-gray-800 shadow-md rounded-lg overflow-hidden">
+                <div class="p-4">
+                    <p class="font-semibold text-lg">Machine Learning</p>
+                    <p class="text-gray-400">1+ Years Experience</p>
+                </div>
+                <div class="bg-gray-700">
+                    <div class="bg-purple-600 h-2.5 rounded-full" style="width: 65%;"></div>
+                </div>
+                <div class="p-4 flex justify-between items-center">
+                    <p class="text-xs text-gray-400">65%</p>
+                </div>
+            </div>
+
+            <!-- Skill Item -->
+            <div class="bg-gray-800 shadow-md rounded-lg overflow-hidden">
+                <div class="p-4">
+                    <p class="font-semibold text-lg">Deep Learning</p>
+                    <p class="text-gray-400">Advanced</p>
+                </div>
+                <div class="bg-gray-700">
+                    <div class="bg-purple-600 h-2.5 rounded-full" style="width: 90%;"></div>
+                </div>
+                <div class="p-4 flex justify-between items-center">
+                    <p class="text-xs text-gray-400">90%</p>
+                </div>
+            </div>
+
+            <!-- Skill Item -->
+            <div class="bg-gray-800 shadow-md rounded-lg overflow-hidden">
+                <div class="p-4">
+                    <p class="font-semibold text-lg">TensorFlow</p>
+                    <p class="text-gray-400">Advanced</p>
+                </div>
+                <div class="bg-gray-700">
+                    <div class="bg-purple-600 h-2.5 rounded-full" style="width: 85%;"></div>
+                </div>
+                <div class="p-4 flex justify-between items-center">
+                    <p class="text-xs text-gray-400">85%</p>
+                </div>
+            </div>
+
+            <!-- Skill Item -->
+            <div class="bg-gray-800 shadow-md rounded-lg overflow-hidden">
+                <div class="p-4">
+                    <p class="font-semibold text-lg">YOLO (You Only Look Once)</p>
+                    <p class="text-gray-400">Intermediate</p>
+                </div>
+                <div class="bg-gray-700">
+                    <div class="bg-purple-600 h-2.5 rounded-full" style="width: 80%;"></div>
+                </div>
+                <div class="p-4 flex justify-between items-center">
+                    <p class="text-xs text-gray-400">80%</p>
+                </div>
+            </div>
+
+            <!-- Additional Skill Item - Django -->
+            <div class="bg-gray-800 shadow-md rounded-lg overflow-hidden">
+                <div class="p-4">
+                    <p class="font-semibold text-lg">Django</p>
+                    <p class="text-gray-400">Intermediate</p>
+                </div>
+                <div class="bg-gray-700">
+                    <div class="bg-purple-600 h-2.5 rounded-full" style="width: 75%;"></div>
+                </div>
+                <div class="p-4 flex justify-between items-center">
+                    <p class="text-xs text-gray-400">75%</p>
+                </div>
+            </div>
+
+            <!-- Additional Skill Item - DBMS -->
+            <div class="bg-gray-800 shadow-md rounded-lg overflow-hidden">
+                <div class="p-4">
+                    <p class="font-semibold text-lg">Database Management Systems (DBMS)</p>
+                    <p class="text-gray-400">Intermediate</p>
+                </div>
+                <div class="bg-gray-700">
+                    <div class="bg-purple-600 h-2.5 rounded-full" style="width: 75%;"></div>
+                </div>
+                <div class="p-4 flex justify-between items-center">
+                    <p class="text-xs text-gray-400">75%</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            var mobileMenu = document.getElementById('mobile-menu');
+            if (mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.remove('hidden');
+            } else {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
