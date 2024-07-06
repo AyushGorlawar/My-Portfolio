@@ -62,6 +62,4 @@ If you have any questions or would like to collaborate, feel free to reach out!
 - **LinkedIn**: [LinkedIn Profile](https://www.linkedin.com/in/ayush-gorlawar/)
 - **GitHub**: [GitHub Profile](https://github.com/AyushGorlawa)
 
-Thank you for visiting my portfolio!
-
-## LICENSE [Click here to view](https://github.com/AyushGorlawar/My-Portfolio/blob/main/LICENSE)
+Thank you for visiting my portfolio! 
